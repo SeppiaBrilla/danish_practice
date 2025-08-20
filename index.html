@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Word Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Danish Word Practice</h1>
+        
+        <div class="mode-selector">
+            <button id="randomMode" class="active">Random Word</button>
+            <button id="listMode">Word List</button>
+        </div>
+
+        <div id="randomWordSection">
+            <div class="word-card">
+                <h2 id="danishWord">Loading...</h2>
+                <div class="pronunciation">
+                    <button id="playAudio" class="audio-btn">🔊 Play</button>
+                </div>
+                <div class="translation">
+                    <button id="showTranslation">Show Translation</button>
+                    <p id="englishTranslation" class="hidden"></p>
+                </div>
+                <button id="nextWord" class="next-btn">Next Word</button>
+            </div>
+        </div>
+
+        <div id="wordListSection" class="hidden">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search Danish words...">
+            </div>
+            <div id="wordList" class="word-list">
+                <!-- Word list will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <audio id="audioPlayer"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
