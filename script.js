@@ -81,7 +81,7 @@ function showRandomWord() {
 // Preload audio file
 function preloadAudio(audioFile) {
     // Set the audio source
-    audioPlayer.src = `output_words/${audioFile}`;
+    audioPlayer.src = `output_words/${audioFile.toLowerCase()}`;
     
     // Handle case when audio file doesn't exist
     audioPlayer.onerror = () => {
