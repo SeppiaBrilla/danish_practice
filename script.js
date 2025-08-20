@@ -43,7 +43,7 @@ async function loadWords() {
                     words.push({
                         danish: danish,
                         english: english,
-                        audioFile: `${danish.charAt(0).toUpperCase() + danish.slice(1)}.mp3`
+                        audioFile: `${danish}.mp3`
                     });
                 }
             }
